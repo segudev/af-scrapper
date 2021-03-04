@@ -7,7 +7,7 @@
 
 (def URL "https://fr.audiofanzine.com/petites-annonces/acheter/")
 
-(def af-selling-main-page
+(defn af-selling-main-page []
   (-> (client/get URL {:insecure? true})
       :body
       parse
@@ -65,7 +65,7 @@
 (defn summary [annonce]
   (-> (s/select (s/class "main-text")
                 annonce)
-      first :content))
+      first :content first))
 
 (defn parse-annonce [annonce]
   (zipmap [:id :img :title :rel-url :price :timeplace :summary]
@@ -73,7 +73,7 @@
 
 (defn current-annonces []
   (map #(parse-annonce %)
-       (extract-annonces af-selling-main-page)))
+       (extract-annonces (af-selling-main-page))))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
