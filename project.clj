@@ -9,7 +9,8 @@
                  [compojure "1.6.2"]
                  [ring/ring-defaults "0.3.2"]
                  [org.clojure/data.json "0.2.6"]
-                 [http-kit "2.3.0"]]
+                 [http-kit "2.3.0"]
+                 [jumblerg/ring-cors "2.0.0"]]
   :main ^:skip-aot af-back.core
   :target-path "target/%s"
   :profiles {:uberjar {:aot :all}})

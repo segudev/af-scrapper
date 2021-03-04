@@ -4,7 +4,8 @@
             [compojure.core :refer :all]
             [compojure.route :as route]
             [ring.middleware.defaults :refer :all]
-            [clojure.data.json :as json])
+            [clojure.data.json :as json]
+            [jumblerg.middleware.cors :refer [wrap-cors]])
   (:gen-class))
 
 (defn scrapping-result [req]
@@ -21,7 +22,8 @@
   [& args]
   (let [port (Integer/parseInt (or (System/getenv "PORT") "8080"))]
     ; Run the server with Ring.defaults middleware
-    (server/run-server (wrap-defaults #'app-routes site-defaults) {:port port})
+    (server/run-server (wrap-cors (wrap-defaults #'app-routes site-defaults) #".*")
+                       {:port port})
     ; Run the server without ring defaults
     ;(server/run-server #'app-routes {:port port})
     (println (str "Running webserver at http:/127.0.0.1:" port "/"))))
