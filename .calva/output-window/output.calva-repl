@@ -1,0 +1,585 @@
+; This is the Calva evaluation results output window.
+; TIPS: The keyboard shortcut `ctrl+alt+c o` shows and focuses this window
+;   when connected to a REPL session.
+; Please see https://calva.io/output/ for more info.
+; Happy coding! ♥️
+
+; Jacking in...
+; Starting Jack-in Terminal: cmd.exe /d /c lein update-in :dependencies conj [nrepl,"0.8.3"] -- update-in :plugins conj [cider/cider-nrepl,"0.26.0"] -- update-in [:repl-options,:nrepl-middleware] conj '["cider.nrepl/cider-middleware"]' -- repl :headless
+; Hooking up nREPL sessions...
+; Connected session: clj
+; TIPS: 
+;   - You can edit the contents here. Use it as a REPL if you like.
+;   - `alt+enter` evaluates the current top level form.
+;   - `ctrl+enter` evaluates the current form.
+;   - `alt+up` and `alt+down` traverse up and down the REPL command history
+;      when the cursor is after the last contents at the prompt
+;   - Clojure lines in stack traces are peekable and clickable.
+clj꞉af-back.core꞉> 
+; Jack-in done.
+clj꞉af-back.core꞉> 
+; Evaluating file: parsing.clj
+#'af-back.parsing/current-annonces
+clj꞉af-back.parsing꞉> 
+#'af-back.parsing/af-selling-main-page
+clj꞉af-back.parsing꞉> 
+#'af-back.parsing/af-selling-main-page
+clj꞉af-back.parsing꞉> 
+#'af-back.parsing/af-selling-main-page
+clj꞉af-back.parsing꞉>
+
+
+#'af-back.parsing/current-annonces
+clj꞉af-back.parsing꞉> 
+({:id "row-2252255",
+  :img
+  "https://medias.audiofanzine.com/img/pictures/normal/3/3/3365240.jpg?fm=pjpg&w=270&h=196&fit=fill&s=303049f2b4bb9fb8e973d54eda854d4b, https://medias.audiofanzine.com/img/pictures/normal/3/3/3365240.jpg?fm=pjpg&w=540&h=392&fit=fill&s=78c62b5996afaaf2a88b92e7bfa20158 2x",
+  :title "DW Mini pro",
+  :rel-url "/kit-batterie/dw-drums/mini-pro/petites-annonces/i.2252255.html",
+  :price 920.0,
+  :timeplace "13:08 - Amiens, Picardie",
+  :summary
+  "Je propose ici une superbe DW drums modèle Mini Pro de 2005 (certifiée à l'intérieur des fûts). C'est une formule Jazzette en Grosse caisse de 16 pouces, tom de 10 et tom basse de 13 ainsi que s…"}
+ {:id "row-2367035",
+  :img
+  "https://medias.audiofanzine.com/img/pictures/normal/3/6/3613952.jpg?fm=pjpg&w=270&h=196&fit=fill&s=24dff58780fc15c804b56c8bb79bc5f9, https://medias.audiofanzine.com/img/pictures/normal/3/6/3613952.jpg?fm=pjpg&w=540&h=392&fit=fill&s=4132bd0cb575b3678b8de966e53c4751 2x",
+  :title "Piano Yamaha P515",
+  :rel-url "/piano-numerique/yamaha/p-515/petites-annonces/i.2367035.html",
+  :price 1250.0,
+  :timeplace "13:07 - Colombes, Ile-de-France",
+  :summary
+  "Vends Piano numérique portable Yamaha P515, couleur noire, acheté il y 6 mois (facture), sous garantie, en parfait état, vendu cause déménagement.\r\n\r\nVendu avec :\r\n- Support Clavier\r\n- Pédale\r\n-…"}
+ {:id "row-2367032",
+  :img
+  "https://medias.audiofanzine.com/img/pictures/normal/3/6/3613949.jpg?fm=pjpg&w=270&h=196&fit=fill&s=435637e0a3096a27bcc26d70648b48ba, https://medias.audiofanzine.com/img/pictures/normal/3/6/3613949.jpg?fm=pjpg&w=540&h=392&fit=fill&s=e1b8dd0d336b56d78ec4da0f0ca64a04 2x",
+  :title "Vends Korg DT-10",
+  :rel-url "/accordeur/korg/DT-10/petites-annonces/i.2367032.html",
+  :price 25.0,
+  :timeplace "13:05 - Massy, Ile-de-France",
+  :summary "bon état avec boîte\r\nenvoi possible"}
+ {:id "row-2166996",
+  :img
+  "https://medias.audiofanzine.com/img/pictures/normal/3/1/3194730.jpg?fm=pjpg&w=270&h=196&fit=fill&s=e52914132c37a4dac1f0d4a978456335, https://medias.audiofanzine.com/img/pictures/normal/3/1/3194730.jpg?fm=pjpg&w=540&h=392&fit=fill&s=c3ef8b480ac0ffeeb18fe4e6e642cf2e 2x",
+  :title "câble Sommer cable Ethercon RJ 45",
+  :rel-url "/connectique/sommer-cable/petites-annonces/i.2166996.html",
+  :price 45.0,
+  :timeplace "13:04 - Boulogne-Billancourt, Ile-de-France",
+  :summary
+  "Bonjour,\r\nlot des x2 câbles professionnels Ethernet, catégorie 7, (long. 10 mètres) : 45 €\r\npour info prix neuf l'unité : 50 €\r\nqualité professionnelle\r\nconnectique Neutrik Ethercon\r\n\r\ncdlt."}
+ {:id "row-2367029",
+  :img
+  "https://img.audiofanzine.com/img/product/normal/3/1/3151.jpg?fm=pjpg&w=270&h=196&fit=fill&s=1788a88224d91c3252658fbbfea36d18, https://img.audiofanzine.com/img/product/normal/3/1/3151.jpg?fm=pjpg&w=540&h=392&fit=fill&s=051ea922cc9b62b1da52d177160db51a 2x",
+  :title "Dictée magique en bon état",
+  :rel-url "/console-de-jeu/texas-instruments/dictee-magique/petites-annonces/i.2367029.html",
+  :price 50.0,
+  :timeplace "13:04 - Ile-de-France",
+  :summary
+  "Dictée magique en bon état\r\n\r\nparfaitement fonctionnelle\r\n\r\nexpédition en colis parfaitement protégé\r\n\r\npaiement paypal . pas de looper \r\n\r\nvendeur avec 100% de taux de confiance (11/11)"}
+ {:id "row-2367026",
+  :img
+  "https://medias.audiofanzine.com/img/pictures/normal/3/6/3613925.jpg?fm=pjpg&w=270&h=196&fit=fill&s=3b0a7e2e35650b5e7710e2b8d76b3796, https://medias.audiofanzine.com/img/pictures/normal/3/6/3613925.jpg?fm=pjpg&w=540&h=392&fit=fill&s=783967bf32115a0447bd83c053c2c4d5 2x",
+  :title "Vends Empress Effects Zoia + transfo 400 euros",
+  :rel-url "/synthe-rack-divers/empress-effects/zoia/petites-annonces/i.2367026.html",
+  :price 400.0,
+  :timeplace "12:59 - Paris, Ile-de-France",
+  :summary
+  "Vends Empress Effects Zoia en très bon état 400 euros.\r\nVendu avec boite et accessoires d'origine + transfo 9V offert.\r\nPossibilité de récupérer en mains propre sur Paris 5ème (studio pro).\r\nEnv…"}
+ {:id "row-2367023",
+  :img
+  "https://img.audiofanzine.com/img/product/normal/2/5/259444.jpg?fm=pjpg&w=270&h=196&fit=fill&s=062cfde64111a186d989715323a2a494, https://img.audiofanzine.com/img/product/normal/2/5/259444.jpg?fm=pjpg&w=540&h=392&fit=fill&s=bbe0b9205c5a29f95b23ef43f3b7b667 2x",
+  :title " Neo Instruments Mini Vent II ",
+  :rel-url "/accessoire-piano/neo-instruments/mini-vent-ii/petites-annonces/i.2367023.html",
+  :price 250.0,
+  :timeplace "12:55 - Toulouse, Midi-Pyrénées",
+  :summary
+  "En bon état, modèle avec pédale de commande.\r\nLes switchs ont été remplacés par des jacks et déportés sur la pédale decommande.\r\nMe contacter pour plus d'infos."}
+ {:id "row-2367020",
+  :img
+  "https://medias.audiofanzine.com/img/pictures/normal/3/6/3613934.jpg?fm=pjpg&w=270&h=196&fit=fill&s=156cabe50eacaf3718388aea77540f05, https://medias.audiofanzine.com/img/pictures/normal/3/6/3613934.jpg?fm=pjpg&w=540&h=392&fit=fill&s=fbe5f01214e65915a1aa2fc9138d97ca 2x",
+  :title "Vends Squarp Pyramid MK2 + Decksaver 450 euros",
+  :rel-url "/sequenceur-hardware/squarp-instruments/pyramid/petites-annonces/i.2367020.html",
+  :price 450.0,
+  :timeplace "12:54 - Paris, Ile-de-France",
+  :summary
+  "Vends Squarp Pyramid MK2 en très bon état + son Decksaver 450 euros.\r\nVendu avec carton d'origine, alimentation, câble USB, micro SD d'origine et overlay.\r\nPossibilité de récupérer en mains prop…"}
+ {:id "row-2361123",
+  :img
+  "https://medias.audiofanzine.com/img/pictures/normal/3/6/3602961.jpg?fm=pjpg&w=270&h=196&fit=fill&s=bf87e2163b7f70c2e8acba8aba9ca0c4, https://medias.audiofanzine.com/img/pictures/normal/3/6/3602961.jpg?fm=pjpg&w=540&h=392&fit=fill&s=87b3abac1171c184ba9637aef66b915e 2x",
+  :title "Vends Elektron ANALOG FOUR MK2 Black",
+  :rel-url "/rack-analogique/elektron/analog-four-mkii/petites-annonces/i.2361123.html",
+  :price 1150.0,
+  :timeplace "12:54 - Le Mans, Pays de la Loire",
+  :summary
+  "Hello,\r\n\r\nJe vends mon Elektron Analog Four MKII version Black en parfait état, car changement de projet.\r\n\r\nLe synthé est de mars 2021 et encore garantie 3 ans.\r\n\r\nVendu avec boîte et accessoir…"}
+ {:id "row-2367017",
+  :img
+  "https://img.audiofanzine.com/img/product/normal/8/4/84185.jpg?fm=pjpg&w=270&h=196&fit=fill&s=17204f6ea0bef64f555a9ea9b9388e43, https://img.audiofanzine.com/img/product/normal/8/4/84185.jpg?fm=pjpg&w=540&h=392&fit=fill&s=7654bdd74e3230a9611bc279d002176a 2x",
+  :title "xotix tri logic old version",
+  :rel-url "/preamplificateur-basse-pedales/xotic-effects/trilogic-bass-preamp/petites-annonces/i.2367017.html",
+  :price 150.0,
+  :timeplace "12:52 - Toulouse, Midi-Pyrénées",
+  :summary "Fonctionne parfaitement.\r\nUtilisé sur basse, guitare, Rhodes synthés."}
+ {:id "row-2367014",
+  :img
+  "https://img.audiofanzine.com/img/product/normal/1/4/14042.jpg?fm=pjpg&w=270&h=196&fit=fill&s=aed3b9701b3423ec2620068c0fbb5e10, https://img.audiofanzine.com/img/product/normal/1/4/14042.jpg?fm=pjpg&w=540&h=392&fit=fill&s=90435da34e77d760b5f9e74f366279be 2x",
+  :title "Electro-Harmonix Holy Grail  old version",
+  :rel-url "/reverb-guitare/electro-harmonix/Holy-Grail/petites-annonces/i.2367014.html",
+  :price 1.0,
+  :timeplace "12:49 - Toulouse, Midi-Pyrénées",
+  :summary "J'en cède une en bon état. RAS.\r\nStudio only"}
+ {:id "row-2367011",
+  :img
+  "https://medias.audiofanzine.com/img/pictures/normal/3/6/3613916.jpg?fm=pjpg&w=270&h=196&fit=fill&s=7528151850f0901df941f31120ddf649, https://medias.audiofanzine.com/img/pictures/normal/3/6/3613916.jpg?fm=pjpg&w=540&h=392&fit=fill&s=c3e17bc3e8de4e82fd7d62f49828fb52 2x",
+  :title "Vends Arturia Keystep Garantie 3 ans 90 euros fdp inclus",
+  :rel-url "/clavier-maitre-midi-32-37-touches/arturia/keystep/petites-annonces/i.2367011.html",
+  :price 90.0,
+  :timeplace "12:49 - Paris, Ile-de-France",
+  :summary
+  "Vends Arturia Keystep comme neuf acheté en Mai 2021 chez Thomann (donc encore garantie 3 ans) 90 euros.\r\nBoite d'origine, câble USB, notice et code jamais enregistré sur le site d'Arturia.\r\nFrai…"}
+ {:id "row-2367008",
+  :img
+  "https://img.audiofanzine.com/img/product/normal/9/6/96593.jpg?fm=pjpg&w=270&h=196&fit=fill&s=566dd4e290de71f47897ec1c91350b5f, https://img.audiofanzine.com/img/product/normal/9/6/96593.jpg?fm=pjpg&w=540&h=392&fit=fill&s=c4e7d901df35dd23282758f764000ed8 2x",
+  :title "M116 FULLBORE METAL - Mxr",
+  :rel-url "/distorsion-guitare/mxr/m116-fullbore-metal/petites-annonces/i.2367008.html",
+  :price 60.0,
+  :timeplace "12:47 - Toulouse, Midi-Pyrénées",
+  :summary "Bon état peu servie.\r\nIl manque une vis dessous."}
+ {:id "row-2367005",
+  :img
+  "https://img.audiofanzine.com/img/product/normal/2/5/255164.jpg?fm=pjpg&w=270&h=196&fit=fill&s=adf60fca8162f3d30d8b125eea38f584, https://img.audiofanzine.com/img/product/normal/2/5/255164.jpg?fm=pjpg&w=540&h=392&fit=fill&s=5269e36201f4e4eaa99f39dee3c52fc3 2x",
+  :title " Electro Har­monix Small Clone",
+  :rel-url "/chorus-guitare/electro-harmonix/small-clone-mk1/petites-annonces/i.2367005.html",
+  :price 1.0,
+  :timeplace "12:46 - Toulouse, Midi-Pyrénées",
+  :summary "J'en ai un à céder.\r\nEsthétique pas top à cause des rayures peinture mais le son est bien là."}
+ {:id "row-2367002",
+  :img
+  "https://img.audiofanzine.com/img/product/normal/1/8/180.jpg?fm=pjpg&w=270&h=196&fit=fill&s=c63a3597838d22e059020859bb9792af, https://img.audiofanzine.com/img/product/normal/1/8/180.jpg?fm=pjpg&w=540&h=392&fit=fill&s=a173673d316c1ce5b953e0ee24afc1d7 2x",
+  :title "Art tube MP x 2",
+  :rel-url "/preampli-lampes/art/Tube-MP/petites-annonces/i.2367002.html",
+  :price 50.0,
+  :timeplace "12:44 - Toulouse, Midi-Pyrénées",
+  :summary "Je vends une paire. 50€"}
+ {:id "row-2366999",
+  :img
+  "https://medias.audiofanzine.com/img/pictures/normal/3/6/3613907.jpg?fm=pjpg&w=270&h=196&fit=fill&s=4a529e9fe947cfa74da062c8cb7e0983, https://medias.audiofanzine.com/img/pictures/normal/3/6/3613907.jpg?fm=pjpg&w=540&h=392&fit=fill&s=e440c8d5d32a554ba4d71a659eaf8c60 2x",
+  :title "Vends ADAM A7",
+  :rel-url "/enceinte-active/adam/A7/petites-annonces/i.2366999.html",
+  :price 700.0,
+  :timeplace "12:42 - Paris, Ile-de-France",
+  :summary
+  "Vends ADAM A7\r\n-\r\nquelques rayures/traces d'usage\r\nles enceintes viennent d'être révisées par Direct-Music (5 Rue Alphonse Daudet, 75014 Paris)\r\n-\r\nà retirer sur Paris 75007"}
+ {:id "row-2366996",
+  :img
+  "https://img.audiofanzine.com/img/product/normal/9/0/90554.jpg?fm=pjpg&w=270&h=196&fit=fill&s=b287d4603ace906621f6d1b636633233, https://img.audiofanzine.com/img/product/normal/9/0/90554.jpg?fm=pjpg&w=540&h=392&fit=fill&s=7f52db5b50bc60089ccb6a47b4ec0f80 2x",
+  :title "Alesis ModFX Philtre",
+  :rel-url "/effet-dj/alesis/ModFX-Philtre/petites-annonces/i.2366996.html",
+  :price 1.0,
+  :timeplace "12:42 - Toulouse, Midi-Pyrénées",
+  :summary "Comme neuf avec son alim."}
+ {:id "row-2165723",
+  :img
+  "https://medias.audiofanzine.com/img/pictures/normal/3/1/3192474.jpg?fm=pjpg&w=270&h=196&fit=fill&s=2904a938db945041f6102b85049f9ff1, https://medias.audiofanzine.com/img/pictures/normal/3/1/3192474.jpg?fm=pjpg&w=540&h=392&fit=fill&s=64e4e5307f2501094e18b6ce5fbf15f2 2x",
+  :title "Mesa Boogie Dual Rectifier Roadster combo",
+  :rel-url "/ampli-combo-tout-lampe-pour-guitare/mesa-boogie/petites-annonces/i.2165723.html",
+  :price 1400.0,
+  :timeplace "12:41 - Aquitaine",
+  :summary
+  "Vends ampli Mesa/Boogie Dual Rectifier 100 watts, 4 canaux, avec Footswitch. Bon état, tout fonctionne correctement. Avec housses de protection (pour ampli et pour footswitch). Il y a aussi le c…"}
+ {:id "row-2366993",
+  :img
+  "https://img.audiofanzine.com/img/product/normal/2/3/234866.jpg?fm=pjpg&w=270&h=196&fit=fill&s=5bb8e0b0b22cb0bff6b7ebc5317a7674, https://img.audiofanzine.com/img/product/normal/2/3/234866.jpg?fm=pjpg&w=540&h=392&fit=fill&s=77db3300c6e1b15c12e70c0e71035abd 2x",
+  :title " Joyo JF-307 Clean Glass ",
+  :rel-url "/simulateur-d-amplis-guitare-en-pedale/joyo/jf-307-clean-glass/petites-annonces/i.2366993.html",
+  :price 35.0,
+  :timeplace "12:40 - Toulouse, Midi-Pyrénées",
+  :summary "Comme neuve, j'en ai deux."}
+ {:id "row-2366990",
+  :img
+  "https://img.audiofanzine.com/img/product/normal/2/8/2816.jpg?fm=pjpg&w=270&h=196&fit=fill&s=681d5a370530b4505ba67c95430090b6, https://img.audiofanzine.com/img/product/normal/2/8/2816.jpg?fm=pjpg&w=540&h=392&fit=fill&s=8bfa6a6b01ed3c3af7b44e88429c4a8c 2x",
+  :title "Mzxr phase ",
+  :rel-url "/phaser-guitare/mxr/m101-phase-90/petites-annonces/i.2366990.html",
+  :price 70.0,
+  :timeplace "12:39 - Toulouse, Midi-Pyrénées",
+  :summary "Bon état toujours utilisée à la main."})
+clj꞉af-back.parsing꞉> 
+({:id "row-2252255",
+  :img
+  "https://medias.audiofanzine.com/img/pictures/normal/3/3/3365240.jpg?fm=pjpg&w=270&h=196&fit=fill&s=303049f2b4bb9fb8e973d54eda854d4b, https://medias.audiofanzine.com/img/pictures/normal/3/3/3365240.jpg?fm=pjpg&w=540&h=392&fit=fill&s=78c62b5996afaaf2a88b92e7bfa20158 2x",
+  :title "DW Mini pro",
+  :rel-url "/kit-batterie/dw-drums/mini-pro/petites-annonces/i.2252255.html",
+  :price 920.0,
+  :timeplace "13:08 - Amiens, Picardie",
+  :summary
+  "Je propose ici une superbe DW drums modèle Mini Pro de 2005 (certifiée à l'intérieur des fûts). C'est une formule Jazzette en Grosse caisse de 16 pouces, tom de 10 et tom basse de 13 ainsi que s…"}
+ {:id "row-2367035",
+  :img
+  "https://medias.audiofanzine.com/img/pictures/normal/3/6/3613952.jpg?fm=pjpg&w=270&h=196&fit=fill&s=24dff58780fc15c804b56c8bb79bc5f9, https://medias.audiofanzine.com/img/pictures/normal/3/6/3613952.jpg?fm=pjpg&w=540&h=392&fit=fill&s=4132bd0cb575b3678b8de966e53c4751 2x",
+  :title "Piano Yamaha P515",
+  :rel-url "/piano-numerique/yamaha/p-515/petites-annonces/i.2367035.html",
+  :price 1250.0,
+  :timeplace "13:07 - Colombes, Ile-de-France",
+  :summary
+  "Vends Piano numérique portable Yamaha P515, couleur noire, acheté il y 6 mois (facture), sous garantie, en parfait état, vendu cause déménagement.\r\n\r\nVendu avec :\r\n- Support Clavier\r\n- Pédale\r\n-…"}
+ {:id "row-2367032",
+  :img
+  "https://medias.audiofanzine.com/img/pictures/normal/3/6/3613949.jpg?fm=pjpg&w=270&h=196&fit=fill&s=435637e0a3096a27bcc26d70648b48ba, https://medias.audiofanzine.com/img/pictures/normal/3/6/3613949.jpg?fm=pjpg&w=540&h=392&fit=fill&s=e1b8dd0d336b56d78ec4da0f0ca64a04 2x",
+  :title "Vends Korg DT-10",
+  :rel-url "/accordeur/korg/DT-10/petites-annonces/i.2367032.html",
+  :price 25.0,
+  :timeplace "13:05 - Massy, Ile-de-France",
+  :summary "bon état avec boîte\r\nenvoi possible"}
+ {:id "row-2166996",
+  :img
+  "https://medias.audiofanzine.com/img/pictures/normal/3/1/3194730.jpg?fm=pjpg&w=270&h=196&fit=fill&s=e52914132c37a4dac1f0d4a978456335, https://medias.audiofanzine.com/img/pictures/normal/3/1/3194730.jpg?fm=pjpg&w=540&h=392&fit=fill&s=c3ef8b480ac0ffeeb18fe4e6e642cf2e 2x",
+  :title "câble Sommer cable Ethercon RJ 45",
+  :rel-url "/connectique/sommer-cable/petites-annonces/i.2166996.html",
+  :price 45.0,
+  :timeplace "13:04 - Boulogne-Billancourt, Ile-de-France",
+  :summary
+  "Bonjour,\r\nlot des x2 câbles professionnels Ethernet, catégorie 7, (long. 10 mètres) : 45 €\r\npour info prix neuf l'unité : 50 €\r\nqualité professionnelle\r\nconnectique Neutrik Ethercon\r\n\r\ncdlt."}
+ {:id "row-2367029",
+  :img
+  "https://img.audiofanzine.com/img/product/normal/3/1/3151.jpg?fm=pjpg&w=270&h=196&fit=fill&s=1788a88224d91c3252658fbbfea36d18, https://img.audiofanzine.com/img/product/normal/3/1/3151.jpg?fm=pjpg&w=540&h=392&fit=fill&s=051ea922cc9b62b1da52d177160db51a 2x",
+  :title "Dictée magique en bon état",
+  :rel-url "/console-de-jeu/texas-instruments/dictee-magique/petites-annonces/i.2367029.html",
+  :price 50.0,
+  :timeplace "13:04 - Ile-de-France",
+  :summary
+  "Dictée magique en bon état\r\n\r\nparfaitement fonctionnelle\r\n\r\nexpédition en colis parfaitement protégé\r\n\r\npaiement paypal . pas de looper \r\n\r\nvendeur avec 100% de taux de confiance (11/11)"}
+ {:id "row-2367026",
+  :img
+  "https://medias.audiofanzine.com/img/pictures/normal/3/6/3613925.jpg?fm=pjpg&w=270&h=196&fit=fill&s=3b0a7e2e35650b5e7710e2b8d76b3796, https://medias.audiofanzine.com/img/pictures/normal/3/6/3613925.jpg?fm=pjpg&w=540&h=392&fit=fill&s=783967bf32115a0447bd83c053c2c4d5 2x",
+  :title "Vends Empress Effects Zoia + transfo 400 euros",
+  :rel-url "/synthe-rack-divers/empress-effects/zoia/petites-annonces/i.2367026.html",
+  :price 400.0,
+  :timeplace "12:59 - Paris, Ile-de-France",
+  :summary
+  "Vends Empress Effects Zoia en très bon état 400 euros.\r\nVendu avec boite et accessoires d'origine + transfo 9V offert.\r\nPossibilité de récupérer en mains propre sur Paris 5ème (studio pro).\r\nEnv…"}
+ {:id "row-2367023",
+  :img
+  "https://img.audiofanzine.com/img/product/normal/2/5/259444.jpg?fm=pjpg&w=270&h=196&fit=fill&s=062cfde64111a186d989715323a2a494, https://img.audiofanzine.com/img/product/normal/2/5/259444.jpg?fm=pjpg&w=540&h=392&fit=fill&s=bbe0b9205c5a29f95b23ef43f3b7b667 2x",
+  :title " Neo Instruments Mini Vent II ",
+  :rel-url "/accessoire-piano/neo-instruments/mini-vent-ii/petites-annonces/i.2367023.html",
+  :price 250.0,
+  :timeplace "12:55 - Toulouse, Midi-Pyrénées",
+  :summary
+  "En bon état, modèle avec pédale de commande.\r\nLes switchs ont été remplacés par des jacks et déportés sur la pédale decommande.\r\nMe contacter pour plus d'infos."}
+ {:id "row-2367020",
+  :img
+  "https://medias.audiofanzine.com/img/pictures/normal/3/6/3613934.jpg?fm=pjpg&w=270&h=196&fit=fill&s=156cabe50eacaf3718388aea77540f05, https://medias.audiofanzine.com/img/pictures/normal/3/6/3613934.jpg?fm=pjpg&w=540&h=392&fit=fill&s=fbe5f01214e65915a1aa2fc9138d97ca 2x",
+  :title "Vends Squarp Pyramid MK2 + Decksaver 450 euros",
+  :rel-url "/sequenceur-hardware/squarp-instruments/pyramid/petites-annonces/i.2367020.html",
+  :price 450.0,
+  :timeplace "12:54 - Paris, Ile-de-France",
+  :summary
+  "Vends Squarp Pyramid MK2 en très bon état + son Decksaver 450 euros.\r\nVendu avec carton d'origine, alimentation, câble USB, micro SD d'origine et overlay.\r\nPossibilité de récupérer en mains prop…"}
+ {:id "row-2361123",
+  :img
+  "https://medias.audiofanzine.com/img/pictures/normal/3/6/3602961.jpg?fm=pjpg&w=270&h=196&fit=fill&s=bf87e2163b7f70c2e8acba8aba9ca0c4, https://medias.audiofanzine.com/img/pictures/normal/3/6/3602961.jpg?fm=pjpg&w=540&h=392&fit=fill&s=87b3abac1171c184ba9637aef66b915e 2x",
+  :title "Vends Elektron ANALOG FOUR MK2 Black",
+  :rel-url "/rack-analogique/elektron/analog-four-mkii/petites-annonces/i.2361123.html",
+  :price 1150.0,
+  :timeplace "12:54 - Le Mans, Pays de la Loire",
+  :summary
+  "Hello,\r\n\r\nJe vends mon Elektron Analog Four MKII version Black en parfait état, car changement de projet.\r\n\r\nLe synthé est de mars 2021 et encore garantie 3 ans.\r\n\r\nVendu avec boîte et accessoir…"}
+ {:id "row-2367017",
+  :img
+  "https://img.audiofanzine.com/img/product/normal/8/4/84185.jpg?fm=pjpg&w=270&h=196&fit=fill&s=17204f6ea0bef64f555a9ea9b9388e43, https://img.audiofanzine.com/img/product/normal/8/4/84185.jpg?fm=pjpg&w=540&h=392&fit=fill&s=7654bdd74e3230a9611bc279d002176a 2x",
+  :title "xotix tri logic old version",
+  :rel-url "/preamplificateur-basse-pedales/xotic-effects/trilogic-bass-preamp/petites-annonces/i.2367017.html",
+  :price 150.0,
+  :timeplace "12:52 - Toulouse, Midi-Pyrénées",
+  :summary "Fonctionne parfaitement.\r\nUtilisé sur basse, guitare, Rhodes synthés."}
+ {:id "row-2367014",
+  :img
+  "https://img.audiofanzine.com/img/product/normal/1/4/14042.jpg?fm=pjpg&w=270&h=196&fit=fill&s=aed3b9701b3423ec2620068c0fbb5e10, https://img.audiofanzine.com/img/product/normal/1/4/14042.jpg?fm=pjpg&w=540&h=392&fit=fill&s=90435da34e77d760b5f9e74f366279be 2x",
+  :title "Electro-Harmonix Holy Grail  old version",
+  :rel-url "/reverb-guitare/electro-harmonix/Holy-Grail/petites-annonces/i.2367014.html",
+  :price 1.0,
+  :timeplace "12:49 - Toulouse, Midi-Pyrénées",
+  :summary "J'en cède une en bon état. RAS.\r\nStudio only"}
+ {:id "row-2367011",
+  :img
+  "https://medias.audiofanzine.com/img/pictures/normal/3/6/3613916.jpg?fm=pjpg&w=270&h=196&fit=fill&s=7528151850f0901df941f31120ddf649, https://medias.audiofanzine.com/img/pictures/normal/3/6/3613916.jpg?fm=pjpg&w=540&h=392&fit=fill&s=c3e17bc3e8de4e82fd7d62f49828fb52 2x",
+  :title "Vends Arturia Keystep Garantie 3 ans 90 euros fdp inclus",
+  :rel-url "/clavier-maitre-midi-32-37-touches/arturia/keystep/petites-annonces/i.2367011.html",
+  :price 90.0,
+  :timeplace "12:49 - Paris, Ile-de-France",
+  :summary
+  "Vends Arturia Keystep comme neuf acheté en Mai 2021 chez Thomann (donc encore garantie 3 ans) 90 euros.\r\nBoite d'origine, câble USB, notice et code jamais enregistré sur le site d'Arturia.\r\nFrai…"}
+ {:id "row-2367008",
+  :img
+  "https://img.audiofanzine.com/img/product/normal/9/6/96593.jpg?fm=pjpg&w=270&h=196&fit=fill&s=566dd4e290de71f47897ec1c91350b5f, https://img.audiofanzine.com/img/product/normal/9/6/96593.jpg?fm=pjpg&w=540&h=392&fit=fill&s=c4e7d901df35dd23282758f764000ed8 2x",
+  :title "M116 FULLBORE METAL - Mxr",
+  :rel-url "/distorsion-guitare/mxr/m116-fullbore-metal/petites-annonces/i.2367008.html",
+  :price 60.0,
+  :timeplace "12:47 - Toulouse, Midi-Pyrénées",
+  :summary "Bon état peu servie.\r\nIl manque une vis dessous."}
+ {:id "row-2367005",
+  :img
+  "https://img.audiofanzine.com/img/product/normal/2/5/255164.jpg?fm=pjpg&w=270&h=196&fit=fill&s=adf60fca8162f3d30d8b125eea38f584, https://img.audiofanzine.com/img/product/normal/2/5/255164.jpg?fm=pjpg&w=540&h=392&fit=fill&s=5269e36201f4e4eaa99f39dee3c52fc3 2x",
+  :title " Electro Har­monix Small Clone",
+  :rel-url "/chorus-guitare/electro-harmonix/small-clone-mk1/petites-annonces/i.2367005.html",
+  :price 1.0,
+  :timeplace "12:46 - Toulouse, Midi-Pyrénées",
+  :summary "J'en ai un à céder.\r\nEsthétique pas top à cause des rayures peinture mais le son est bien là."}
+ {:id "row-2367002",
+  :img
+  "https://img.audiofanzine.com/img/product/normal/1/8/180.jpg?fm=pjpg&w=270&h=196&fit=fill&s=c63a3597838d22e059020859bb9792af, https://img.audiofanzine.com/img/product/normal/1/8/180.jpg?fm=pjpg&w=540&h=392&fit=fill&s=a173673d316c1ce5b953e0ee24afc1d7 2x",
+  :title "Art tube MP x 2",
+  :rel-url "/preampli-lampes/art/Tube-MP/petites-annonces/i.2367002.html",
+  :price 50.0,
+  :timeplace "12:44 - Toulouse, Midi-Pyrénées",
+  :summary "Je vends une paire. 50€"}
+ {:id "row-2366999",
+  :img
+  "https://medias.audiofanzine.com/img/pictures/normal/3/6/3613907.jpg?fm=pjpg&w=270&h=196&fit=fill&s=4a529e9fe947cfa74da062c8cb7e0983, https://medias.audiofanzine.com/img/pictures/normal/3/6/3613907.jpg?fm=pjpg&w=540&h=392&fit=fill&s=e440c8d5d32a554ba4d71a659eaf8c60 2x",
+  :title "Vends ADAM A7",
+  :rel-url "/enceinte-active/adam/A7/petites-annonces/i.2366999.html",
+  :price 700.0,
+  :timeplace "12:42 - Paris, Ile-de-France",
+  :summary
+  "Vends ADAM A7\r\n-\r\nquelques rayures/traces d'usage\r\nles enceintes viennent d'être révisées par Direct-Music (5 Rue Alphonse Daudet, 75014 Paris)\r\n-\r\nà retirer sur Paris 75007"}
+ {:id "row-2366996",
+  :img
+  "https://img.audiofanzine.com/img/product/normal/9/0/90554.jpg?fm=pjpg&w=270&h=196&fit=fill&s=b287d4603ace906621f6d1b636633233, https://img.audiofanzine.com/img/product/normal/9/0/90554.jpg?fm=pjpg&w=540&h=392&fit=fill&s=7f52db5b50bc60089ccb6a47b4ec0f80 2x",
+  :title "Alesis ModFX Philtre",
+  :rel-url "/effet-dj/alesis/ModFX-Philtre/petites-annonces/i.2366996.html",
+  :price 1.0,
+  :timeplace "12:42 - Toulouse, Midi-Pyrénées",
+  :summary "Comme neuf avec son alim."}
+ {:id "row-2165723",
+  :img
+  "https://medias.audiofanzine.com/img/pictures/normal/3/1/3192474.jpg?fm=pjpg&w=270&h=196&fit=fill&s=2904a938db945041f6102b85049f9ff1, https://medias.audiofanzine.com/img/pictures/normal/3/1/3192474.jpg?fm=pjpg&w=540&h=392&fit=fill&s=64e4e5307f2501094e18b6ce5fbf15f2 2x",
+  :title "Mesa Boogie Dual Rectifier Roadster combo",
+  :rel-url "/ampli-combo-tout-lampe-pour-guitare/mesa-boogie/petites-annonces/i.2165723.html",
+  :price 1400.0,
+  :timeplace "12:41 - Aquitaine",
+  :summary
+  "Vends ampli Mesa/Boogie Dual Rectifier 100 watts, 4 canaux, avec Footswitch. Bon état, tout fonctionne correctement. Avec housses de protection (pour ampli et pour footswitch). Il y a aussi le c…"}
+ {:id "row-2366993",
+  :img
+  "https://img.audiofanzine.com/img/product/normal/2/3/234866.jpg?fm=pjpg&w=270&h=196&fit=fill&s=5bb8e0b0b22cb0bff6b7ebc5317a7674, https://img.audiofanzine.com/img/product/normal/2/3/234866.jpg?fm=pjpg&w=540&h=392&fit=fill&s=77db3300c6e1b15c12e70c0e71035abd 2x",
+  :title " Joyo JF-307 Clean Glass ",
+  :rel-url "/simulateur-d-amplis-guitare-en-pedale/joyo/jf-307-clean-glass/petites-annonces/i.2366993.html",
+  :price 35.0,
+  :timeplace "12:40 - Toulouse, Midi-Pyrénées",
+  :summary "Comme neuve, j'en ai deux."}
+ {:id "row-2366990",
+  :img
+  "https://img.audiofanzine.com/img/product/normal/2/8/2816.jpg?fm=pjpg&w=270&h=196&fit=fill&s=681d5a370530b4505ba67c95430090b6, https://img.audiofanzine.com/img/product/normal/2/8/2816.jpg?fm=pjpg&w=540&h=392&fit=fill&s=8bfa6a6b01ed3c3af7b44e88429c4a8c 2x",
+  :title "Mzxr phase ",
+  :rel-url "/phaser-guitare/mxr/m101-phase-90/petites-annonces/i.2366990.html",
+  :price 70.0,
+  :timeplace "12:39 - Toulouse, Midi-Pyrénées",
+  :summary "Bon état toujours utilisée à la main."})
+clj꞉af-back.parsing꞉> 
+({:id "row-2252255",
+  :img
+  "https://medias.audiofanzine.com/img/pictures/normal/3/3/3365240.jpg?fm=pjpg&w=270&h=196&fit=fill&s=303049f2b4bb9fb8e973d54eda854d4b, https://medias.audiofanzine.com/img/pictures/normal/3/3/3365240.jpg?fm=pjpg&w=540&h=392&fit=fill&s=78c62b5996afaaf2a88b92e7bfa20158 2x",
+  :title "DW Mini pro",
+  :rel-url "/kit-batterie/dw-drums/mini-pro/petites-annonces/i.2252255.html",
+  :price 920.0,
+  :timeplace "13:08 - Amiens, Picardie",
+  :summary
+  "Je propose ici une superbe DW drums modèle Mini Pro de 2005 (certifiée à l'intérieur des fûts). C'est une formule Jazzette en Grosse caisse de 16 pouces, tom de 10 et tom basse de 13 ainsi que s…"}
+ {:id "row-2367035",
+  :img
+  "https://medias.audiofanzine.com/img/pictures/normal/3/6/3613952.jpg?fm=pjpg&w=270&h=196&fit=fill&s=24dff58780fc15c804b56c8bb79bc5f9, https://medias.audiofanzine.com/img/pictures/normal/3/6/3613952.jpg?fm=pjpg&w=540&h=392&fit=fill&s=4132bd0cb575b3678b8de966e53c4751 2x",
+  :title "Piano Yamaha P515",
+  :rel-url "/piano-numerique/yamaha/p-515/petites-annonces/i.2367035.html",
+  :price 1250.0,
+  :timeplace "13:07 - Colombes, Ile-de-France",
+  :summary
+  "Vends Piano numérique portable Yamaha P515, couleur noire, acheté il y 6 mois (facture), sous garantie, en parfait état, vendu cause déménagement.\r\n\r\nVendu avec :\r\n- Support Clavier\r\n- Pédale\r\n-…"}
+ {:id "row-2367032",
+  :img
+  "https://medias.audiofanzine.com/img/pictures/normal/3/6/3613949.jpg?fm=pjpg&w=270&h=196&fit=fill&s=435637e0a3096a27bcc26d70648b48ba, https://medias.audiofanzine.com/img/pictures/normal/3/6/3613949.jpg?fm=pjpg&w=540&h=392&fit=fill&s=e1b8dd0d336b56d78ec4da0f0ca64a04 2x",
+  :title "Vends Korg DT-10",
+  :rel-url "/accordeur/korg/DT-10/petites-annonces/i.2367032.html",
+  :price 25.0,
+  :timeplace "13:05 - Massy, Ile-de-France",
+  :summary "bon état avec boîte\r\nenvoi possible"}
+ {:id "row-2166996",
+  :img
+  "https://medias.audiofanzine.com/img/pictures/normal/3/1/3194730.jpg?fm=pjpg&w=270&h=196&fit=fill&s=e52914132c37a4dac1f0d4a978456335, https://medias.audiofanzine.com/img/pictures/normal/3/1/3194730.jpg?fm=pjpg&w=540&h=392&fit=fill&s=c3ef8b480ac0ffeeb18fe4e6e642cf2e 2x",
+  :title "câble Sommer cable Ethercon RJ 45",
+  :rel-url "/connectique/sommer-cable/petites-annonces/i.2166996.html",
+  :price 45.0,
+  :timeplace "13:04 - Boulogne-Billancourt, Ile-de-France",
+  :summary
+  "Bonjour,\r\nlot des x2 câbles professionnels Ethernet, catégorie 7, (long. 10 mètres) : 45 €\r\npour info prix neuf l'unité : 50 €\r\nqualité professionnelle\r\nconnectique Neutrik Ethercon\r\n\r\ncdlt."}
+ {:id "row-2367029",
+  :img
+  "https://img.audiofanzine.com/img/product/normal/3/1/3151.jpg?fm=pjpg&w=270&h=196&fit=fill&s=1788a88224d91c3252658fbbfea36d18, https://img.audiofanzine.com/img/product/normal/3/1/3151.jpg?fm=pjpg&w=540&h=392&fit=fill&s=051ea922cc9b62b1da52d177160db51a 2x",
+  :title "Dictée magique en bon état",
+  :rel-url "/console-de-jeu/texas-instruments/dictee-magique/petites-annonces/i.2367029.html",
+  :price 50.0,
+  :timeplace "13:04 - Ile-de-France",
+  :summary
+  "Dictée magique en bon état\r\n\r\nparfaitement fonctionnelle\r\n\r\nexpédition en colis parfaitement protégé\r\n\r\npaiement paypal . pas de looper \r\n\r\nvendeur avec 100% de taux de confiance (11/11)"}
+ {:id "row-2367026",
+  :img
+  "https://medias.audiofanzine.com/img/pictures/normal/3/6/3613925.jpg?fm=pjpg&w=270&h=196&fit=fill&s=3b0a7e2e35650b5e7710e2b8d76b3796, https://medias.audiofanzine.com/img/pictures/normal/3/6/3613925.jpg?fm=pjpg&w=540&h=392&fit=fill&s=783967bf32115a0447bd83c053c2c4d5 2x",
+  :title "Vends Empress Effects Zoia + transfo 400 euros",
+  :rel-url "/synthe-rack-divers/empress-effects/zoia/petites-annonces/i.2367026.html",
+  :price 400.0,
+  :timeplace "12:59 - Paris, Ile-de-France",
+  :summary
+  "Vends Empress Effects Zoia en très bon état 400 euros.\r\nVendu avec boite et accessoires d'origine + transfo 9V offert.\r\nPossibilité de récupérer en mains propre sur Paris 5ème (studio pro).\r\nEnv…"}
+ {:id "row-2367023",
+  :img
+  "https://img.audiofanzine.com/img/product/normal/2/5/259444.jpg?fm=pjpg&w=270&h=196&fit=fill&s=062cfde64111a186d989715323a2a494, https://img.audiofanzine.com/img/product/normal/2/5/259444.jpg?fm=pjpg&w=540&h=392&fit=fill&s=bbe0b9205c5a29f95b23ef43f3b7b667 2x",
+  :title " Neo Instruments Mini Vent II ",
+  :rel-url "/accessoire-piano/neo-instruments/mini-vent-ii/petites-annonces/i.2367023.html",
+  :price 250.0,
+  :timeplace "12:55 - Toulouse, Midi-Pyrénées",
+  :summary
+  "En bon état, modèle avec pédale de commande.\r\nLes switchs ont été remplacés par des jacks et déportés sur la pédale decommande.\r\nMe contacter pour plus d'infos."}
+ {:id "row-2367020",
+  :img
+  "https://medias.audiofanzine.com/img/pictures/normal/3/6/3613934.jpg?fm=pjpg&w=270&h=196&fit=fill&s=156cabe50eacaf3718388aea77540f05, https://medias.audiofanzine.com/img/pictures/normal/3/6/3613934.jpg?fm=pjpg&w=540&h=392&fit=fill&s=fbe5f01214e65915a1aa2fc9138d97ca 2x",
+  :title "Vends Squarp Pyramid MK2 + Decksaver 450 euros",
+  :rel-url "/sequenceur-hardware/squarp-instruments/pyramid/petites-annonces/i.2367020.html",
+  :price 450.0,
+  :timeplace "12:54 - Paris, Ile-de-France",
+  :summary
+  "Vends Squarp Pyramid MK2 en très bon état + son Decksaver 450 euros.\r\nVendu avec carton d'origine, alimentation, câble USB, micro SD d'origine et overlay.\r\nPossibilité de récupérer en mains prop…"}
+ {:id "row-2361123",
+  :img
+  "https://medias.audiofanzine.com/img/pictures/normal/3/6/3602961.jpg?fm=pjpg&w=270&h=196&fit=fill&s=bf87e2163b7f70c2e8acba8aba9ca0c4, https://medias.audiofanzine.com/img/pictures/normal/3/6/3602961.jpg?fm=pjpg&w=540&h=392&fit=fill&s=87b3abac1171c184ba9637aef66b915e 2x",
+  :title "Vends Elektron ANALOG FOUR MK2 Black",
+  :rel-url "/rack-analogique/elektron/analog-four-mkii/petites-annonces/i.2361123.html",
+  :price 1150.0,
+  :timeplace "12:54 - Le Mans, Pays de la Loire",
+  :summary
+  "Hello,\r\n\r\nJe vends mon Elektron Analog Four MKII version Black en parfait état, car changement de projet.\r\n\r\nLe synthé est de mars 2021 et encore garantie 3 ans.\r\n\r\nVendu avec boîte et accessoir…"}
+ {:id "row-2367017",
+  :img
+  "https://img.audiofanzine.com/img/product/normal/8/4/84185.jpg?fm=pjpg&w=270&h=196&fit=fill&s=17204f6ea0bef64f555a9ea9b9388e43, https://img.audiofanzine.com/img/product/normal/8/4/84185.jpg?fm=pjpg&w=540&h=392&fit=fill&s=7654bdd74e3230a9611bc279d002176a 2x",
+  :title "xotix tri logic old version",
+  :rel-url "/preamplificateur-basse-pedales/xotic-effects/trilogic-bass-preamp/petites-annonces/i.2367017.html",
+  :price 150.0,
+  :timeplace "12:52 - Toulouse, Midi-Pyrénées",
+  :summary "Fonctionne parfaitement.\r\nUtilisé sur basse, guitare, Rhodes synthés."}
+ {:id "row-2367014",
+  :img
+  "https://img.audiofanzine.com/img/product/normal/1/4/14042.jpg?fm=pjpg&w=270&h=196&fit=fill&s=aed3b9701b3423ec2620068c0fbb5e10, https://img.audiofanzine.com/img/product/normal/1/4/14042.jpg?fm=pjpg&w=540&h=392&fit=fill&s=90435da34e77d760b5f9e74f366279be 2x",
+  :title "Electro-Harmonix Holy Grail  old version",
+  :rel-url "/reverb-guitare/electro-harmonix/Holy-Grail/petites-annonces/i.2367014.html",
+  :price 1.0,
+  :timeplace "12:49 - Toulouse, Midi-Pyrénées",
+  :summary "J'en cède une en bon état. RAS.\r\nStudio only"}
+ {:id "row-2367011",
+  :img
+  "https://medias.audiofanzine.com/img/pictures/normal/3/6/3613916.jpg?fm=pjpg&w=270&h=196&fit=fill&s=7528151850f0901df941f31120ddf649, https://medias.audiofanzine.com/img/pictures/normal/3/6/3613916.jpg?fm=pjpg&w=540&h=392&fit=fill&s=c3e17bc3e8de4e82fd7d62f49828fb52 2x",
+  :title "Vends Arturia Keystep Garantie 3 ans 90 euros fdp inclus",
+  :rel-url "/clavier-maitre-midi-32-37-touches/arturia/keystep/petites-annonces/i.2367011.html",
+  :price 90.0,
+  :timeplace "12:49 - Paris, Ile-de-France",
+  :summary
+  "Vends Arturia Keystep comme neuf acheté en Mai 2021 chez Thomann (donc encore garantie 3 ans) 90 euros.\r\nBoite d'origine, câble USB, notice et code jamais enregistré sur le site d'Arturia.\r\nFrai…"}
+ {:id "row-2367008",
+  :img
+  "https://img.audiofanzine.com/img/product/normal/9/6/96593.jpg?fm=pjpg&w=270&h=196&fit=fill&s=566dd4e290de71f47897ec1c91350b5f, https://img.audiofanzine.com/img/product/normal/9/6/96593.jpg?fm=pjpg&w=540&h=392&fit=fill&s=c4e7d901df35dd23282758f764000ed8 2x",
+  :title "M116 FULLBORE METAL - Mxr",
+  :rel-url "/distorsion-guitare/mxr/m116-fullbore-metal/petites-annonces/i.2367008.html",
+  :price 60.0,
+  :timeplace "12:47 - Toulouse, Midi-Pyrénées",
+  :summary "Bon état peu servie.\r\nIl manque une vis dessous."}
+ {:id "row-2367005",
+  :img
+  "https://img.audiofanzine.com/img/product/normal/2/5/255164.jpg?fm=pjpg&w=270&h=196&fit=fill&s=adf60fca8162f3d30d8b125eea38f584, https://img.audiofanzine.com/img/product/normal/2/5/255164.jpg?fm=pjpg&w=540&h=392&fit=fill&s=5269e36201f4e4eaa99f39dee3c52fc3 2x",
+  :title " Electro Har­monix Small Clone",
+  :rel-url "/chorus-guitare/electro-harmonix/small-clone-mk1/petites-annonces/i.2367005.html",
+  :price 1.0,
+  :timeplace "12:46 - Toulouse, Midi-Pyrénées",
+  :summary "J'en ai un à céder.\r\nEsthétique pas top à cause des rayures peinture mais le son est bien là."}
+ {:id "row-2367002",
+  :img
+  "https://img.audiofanzine.com/img/product/normal/1/8/180.jpg?fm=pjpg&w=270&h=196&fit=fill&s=c63a3597838d22e059020859bb9792af, https://img.audiofanzine.com/img/product/normal/1/8/180.jpg?fm=pjpg&w=540&h=392&fit=fill&s=a173673d316c1ce5b953e0ee24afc1d7 2x",
+  :title "Art tube MP x 2",
+  :rel-url "/preampli-lampes/art/Tube-MP/petites-annonces/i.2367002.html",
+  :price 50.0,
+  :timeplace "12:44 - Toulouse, Midi-Pyrénées",
+  :summary "Je vends une paire. 50€"}
+ {:id "row-2366999",
+  :img
+  "https://medias.audiofanzine.com/img/pictures/normal/3/6/3613907.jpg?fm=pjpg&w=270&h=196&fit=fill&s=4a529e9fe947cfa74da062c8cb7e0983, https://medias.audiofanzine.com/img/pictures/normal/3/6/3613907.jpg?fm=pjpg&w=540&h=392&fit=fill&s=e440c8d5d32a554ba4d71a659eaf8c60 2x",
+  :title "Vends ADAM A7",
+  :rel-url "/enceinte-active/adam/A7/petites-annonces/i.2366999.html",
+  :price 700.0,
+  :timeplace "12:42 - Paris, Ile-de-France",
+  :summary
+  "Vends ADAM A7\r\n-\r\nquelques rayures/traces d'usage\r\nles enceintes viennent d'être révisées par Direct-Music (5 Rue Alphonse Daudet, 75014 Paris)\r\n-\r\nà retirer sur Paris 75007"}
+ {:id "row-2366996",
+  :img
+  "https://img.audiofanzine.com/img/product/normal/9/0/90554.jpg?fm=pjpg&w=270&h=196&fit=fill&s=b287d4603ace906621f6d1b636633233, https://img.audiofanzine.com/img/product/normal/9/0/90554.jpg?fm=pjpg&w=540&h=392&fit=fill&s=7f52db5b50bc60089ccb6a47b4ec0f80 2x",
+  :title "Alesis ModFX Philtre",
+  :rel-url "/effet-dj/alesis/ModFX-Philtre/petites-annonces/i.2366996.html",
+  :price 1.0,
+  :timeplace "12:42 - Toulouse, Midi-Pyrénées",
+  :summary "Comme neuf avec son alim."}
+ {:id "row-2165723",
+  :img
+  "https://medias.audiofanzine.com/img/pictures/normal/3/1/3192474.jpg?fm=pjpg&w=270&h=196&fit=fill&s=2904a938db945041f6102b85049f9ff1, https://medias.audiofanzine.com/img/pictures/normal/3/1/3192474.jpg?fm=pjpg&w=540&h=392&fit=fill&s=64e4e5307f2501094e18b6ce5fbf15f2 2x",
+  :title "Mesa Boogie Dual Rectifier Roadster combo",
+  :rel-url "/ampli-combo-tout-lampe-pour-guitare/mesa-boogie/petites-annonces/i.2165723.html",
+  :price 1400.0,
+  :timeplace "12:41 - Aquitaine",
+  :summary
+  "Vends ampli Mesa/Boogie Dual Rectifier 100 watts, 4 canaux, avec Footswitch. Bon état, tout fonctionne correctement. Avec housses de protection (pour ampli et pour footswitch). Il y a aussi le c…"}
+ {:id "row-2366993",
+  :img
+  "https://img.audiofanzine.com/img/product/normal/2/3/234866.jpg?fm=pjpg&w=270&h=196&fit=fill&s=5bb8e0b0b22cb0bff6b7ebc5317a7674, https://img.audiofanzine.com/img/product/normal/2/3/234866.jpg?fm=pjpg&w=540&h=392&fit=fill&s=77db3300c6e1b15c12e70c0e71035abd 2x",
+  :title " Joyo JF-307 Clean Glass ",
+  :rel-url "/simulateur-d-amplis-guitare-en-pedale/joyo/jf-307-clean-glass/petites-annonces/i.2366993.html",
+  :price 35.0,
+  :timeplace "12:40 - Toulouse, Midi-Pyrénées",
+  :summary "Comme neuve, j'en ai deux."}
+ {:id "row-2366990",
+  :img
+  "https://img.audiofanzine.com/img/product/normal/2/8/2816.jpg?fm=pjpg&w=270&h=196&fit=fill&s=681d5a370530b4505ba67c95430090b6, https://img.audiofanzine.com/img/product/normal/2/8/2816.jpg?fm=pjpg&w=540&h=392&fit=fill&s=8bfa6a6b01ed3c3af7b44e88429c4a8c 2x",
+  :title "Mzxr phase ",
+  :rel-url "/phaser-guitare/mxr/m101-phase-90/petites-annonces/i.2366990.html",
+  :price 70.0,
+  :timeplace "12:39 - Toulouse, Midi-Pyrénées",
+  :summary "Bon état toujours utilisée à la main."})
+clj꞉af-back.parsing꞉> 
+; Execution error (UnsupportedOperationException) at af-back.parsing/eval14906 (form-init9022908047544030985.clj:86).
+; count not supported on this type: parsing$current_annonces
+clj꞉af-back.parsing꞉> 
+; Execution error (UnsupportedOperationException) at af-back.parsing/eval14908 (form-init9022908047544030985.clj:86).
+; count not supported on this type: parsing$current_annonces
+clj꞉af-back.parsing꞉> 
+#'af-back.parsing/current-annonces
+clj꞉af-back.parsing꞉> 
+20
+clj꞉af-back.parsing꞉> 
+#'af-back.parsing/current-annonces
+clj꞉af-back.parsing꞉> 
+clojure.lang.RT/countFrom (RT.java:667)
+clojure.lang.RT/count (RT.java:639)
+af-back.parsing/eval14908 (form-init9022908047544030985.clj:86)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:202)
+nrepl.middleware.session/session-exec (session.clj:201)
+java.lang.Thread/run (:-1)
+clj꞉af-back.parsing꞉> 
+20
+clj꞉af-back.parsing꞉> 
+#'af-back.parsing/current-annonces
+clj꞉af-back.parsing꞉> 

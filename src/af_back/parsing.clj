@@ -31,11 +31,12 @@
 
 (defn id [annonce]
   (:id (:attrs annonce)))
-
+;;;;;;  /!\
 (defn img [annonce]
   (-> (s/select (s/class "playlist-row-thumbnail")
                 annonce)
-      first :content first :attrs))
+      first :content first :content first :attrs :srcset))
+
 
 (defn title [annonce]
   (-> (s/select (s/class "playlist-row-title")
@@ -43,24 +44,31 @@
       first :content first))
 
 (defn rel-url [annonce]
-  (-> (s/select (s/class "playlist-row-content")
+  (-> (s/select (s/class "link-wrapper")
                 annonce)
-      first :content second :attrs :href))
+      first :attrs :href))
+
 
 (defn price [annonce]
   (-> (s/select (s/class "playlist-price")
                 annonce)
       first :content first sanitize-price))
 
-(defn timeplace [annonce]
+(defn replace-and-trim [sentence char]
+  (string/trim (string/replace sentence (str char " ") "")))
+
+(defn hour [annonce]
   (-> (s/select (s/class "playlist-row-meta")
                 annonce)
-      first :content first string/trim))
+      first :content first :content last (replace-and-trim "à")))
 
-;;If we need to split time from location ->
-;;(defn time-split [s]
-;;  (let [[time place] (str/split s #" - ")]
-;;    conj {:time time :place place}))
+(defn place [annonce]
+  (-> (s/select (s/class "playlist-row-meta")
+                annonce)
+      first :content second :content first (replace-and-trim "-")))
+
+(defn timeplace [annonce]
+  (str (af-back.parsing/hour annonce) " - " (place annonce)))
 
 (defn summary [annonce]
   (-> (s/select (s/class "main-text")
@@ -71,9 +79,15 @@
   (zipmap [:id :img :title :rel-url :price :timeplace :summary]
           ((juxt id img title rel-url price timeplace summary) annonce)))
 
-(defn current-annonces []
+(def current-annonces
   (map #(parse-annonce %)
        (extract-annonces (af-selling-main-page))))
+       
+(count current-annonces)
+
+;next is toimplement paging
+;so we can request the next 20 annonces
+
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
