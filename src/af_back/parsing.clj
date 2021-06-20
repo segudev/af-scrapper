@@ -7,8 +7,11 @@
 
 (def URL "https://fr.audiofanzine.com/petites-annonces/acheter/")
 
-(defn af-selling-main-page []
-  (-> (client/get URL {:insecure? true})
+(defn url [page]
+  (str URL (format "p.%d.html" page)))
+
+(defn af-selling [page]
+  (-> (client/get (url page) {:insecure? true})
       :body
       parse
       as-hickory))
@@ -48,7 +51,6 @@
                 annonce)
       first :attrs :href))
 
-
 (defn price [annonce]
   (-> (s/select (s/class "playlist-price")
                 annonce)
@@ -79,15 +81,9 @@
   (zipmap [:id :img :title :rel-url :price :timeplace :summary]
           ((juxt id img title rel-url price timeplace summary) annonce)))
 
-(def current-annonces
+(defn current-annonces [page]
   (map #(parse-annonce %)
-       (extract-annonces (af-selling-main-page))))
-       
-(count current-annonces)
-
-;next is toimplement paging
-;so we can request the next 20 annonces
-
+       (extract-annonces (af-selling page))))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 

@@ -1,31 +1,13 @@
 # af-back
 
-FIXME: description
-
-## Installation
-
-Download from http://example.com/FIXME.
+Simple scrapper for https://fr.audiofanzine.com/petites-annonces/acheter/
 
 ## Usage
 
-FIXME: explanation
+Just run
 
-    $ java -jar af-back-0.1.0-standalone.jar [args]
+    $ java -jar af-back-0.1.0-standalone.jar
 
-## Options
-
-FIXME: listing of options this app accepts.
-
-## Examples
-
-...
-
-### Bugs
-
-...
-
-### Any Other Sections
-### That You Think
 ### Might be Useful
 
 ## License

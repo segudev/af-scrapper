@@ -8,14 +8,14 @@
             [jumblerg.middleware.cors :refer [wrap-cors]])
   (:gen-class))
 
-(defn scrapping-result [req]
+(defn scrapping-result [page]
   {:status  200
    :headers {"Content-Type" "application/json"}
-   :body    (json/write-str (current-annonces))})
+   :body    (json/write-str (current-annonces (Integer/parseInt page)))})
 
 (defroutes app-routes
-           (GET "/" [] scrapping-result)
-           (route/not-found "Error, page not found!"))
+  (GET "/:page" [page] (scrapping-result page))
+  (route/not-found "Error, page not found!"))
 
 (defn -main
   "This is our main entry point"
