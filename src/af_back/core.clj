@@ -26,6 +26,6 @@
                        {:port port})
     ; Run the server without ring defaults
     ;(server/run-server #'app-routes {:port port})
-    (println (str "Running webserver at http:/127.0.0.1:" port "/"))))
+    (println (str "Running webserver at http://127.0.0.1:" port "/"))))
 
 

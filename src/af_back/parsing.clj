@@ -5,7 +5,7 @@
             [clojure.string :as string])
   (:gen-class))
 
-(def URL "https://fr.audiofanzine.com/petites-annonces/acheter/")
+(def URL "https://fr.audiofanzine.com/synthetiseur/petites-annonces/")
 
 (defn url [page]
   (str URL (format "p.%d.html" page)))
@@ -35,11 +35,16 @@
 (defn id [annonce]
   (:id (:attrs annonce)))
 ;;;;;;  /!\
-(defn img [annonce]
-  (-> (s/select (s/class "playlist-row-thumbnail")
-                annonce)
-      first :content first :content first :attrs :srcset))
 
+(defn img-url [url]
+  (string/replace
+   (second (string/split url #", "))
+   #" 2x" ""))
+
+(defn img [annonce]
+  (if-let [url (-> (s/select (s/class "playlist-row-thumbnail") annonce)
+                   first :content first :content first :attrs :srcset)]
+    (img-url url)))
 
 (defn title [annonce]
   (-> (s/select (s/class "playlist-row-title")
@@ -65,12 +70,15 @@
       first :content first :content last (replace-and-trim "à")))
 
 (defn place [annonce]
-  (-> (s/select (s/class "playlist-row-meta")
-                annonce)
-      first :content second :content first (replace-and-trim "-")))
+  (if-let [place (-> (s/select (s/class "playlist-row-meta") annonce)
+                     first :content second :content first)]
+    (replace-and-trim place "-")))
 
 (defn timeplace [annonce]
-  (str (af-back.parsing/hour annonce) " - " (place annonce)))
+  (let [time (af-back.parsing/hour annonce)]
+    (if-let [place (place annonce)]
+      (str time " - " place)
+      time)))
 
 (defn summary [annonce]
   (-> (s/select (s/class "main-text")
@@ -85,7 +93,12 @@
   (map #(parse-annonce %)
        (extract-annonces (af-selling page))))
 
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; (defn test-parser [parser]
+;;   (map #(parser %)
+;;        (extract-annonces (af-selling 0))))
+;; (test-parser place)
 
 ;;(def now (.atZone (java.time.Instant/now ) (java.time.ZoneId/of "Europe/Paris")))
 
