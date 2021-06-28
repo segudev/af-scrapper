@@ -1,1 +1,1 @@
-web: java $JVM_OPTS -cp target/af-back-0.1.0-SNAPSHOT.jar clojure.main -m af-back.core $PORT
+web: java $JVM_OPTS -jar target/af-back-standalone.jar
