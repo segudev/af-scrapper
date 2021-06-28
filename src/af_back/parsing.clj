@@ -5,10 +5,11 @@
             [clojure.string :as string])
   (:gen-class))
 
-(def URL "https://fr.audiofanzine.com/synthetiseur/petites-annonces/")
+(def DOMAIN "https://fr.audiofanzine.com")
+(def ENDPOINT "/synthetiseur/petites-annonces")
 
 (defn url [page]
-  (str URL (format "p.%d.html" page)))
+  (str DOMAIN ENDPOINT (format "/p.%d.html" page)))
 
 (defn af-selling [page]
   (-> (client/get (url page) {:insecure? true})
@@ -34,9 +35,8 @@
 
 (defn id [annonce]
   (:id (:attrs annonce)))
-;;;;;;  /!\
 
-(defn img-url [url]
+(defn sanitize-img-url [url]
   (string/replace
    (second (string/split url #", "))
    #" 2x" ""))
@@ -44,17 +44,17 @@
 (defn img [annonce]
   (if-let [url (-> (s/select (s/class "playlist-row-thumbnail") annonce)
                    first :content first :content first :attrs :srcset)]
-    (img-url url)))
+    (sanitize-img-url url)))
 
 (defn title [annonce]
   (-> (s/select (s/class "playlist-row-title")
                 annonce)
       first :content first))
 
-(defn rel-url [annonce]
-  (-> (s/select (s/class "link-wrapper")
+(defn link [annonce]
+  (str DOMAIN (-> (s/select (s/class "link-wrapper")
                 annonce)
-      first :attrs :href))
+      first :attrs :href)))
 
 (defn price [annonce]
   (-> (s/select (s/class "playlist-price")
@@ -86,8 +86,8 @@
       first :content first))
 
 (defn parse-annonce [annonce]
-  (zipmap [:id :img :title :rel-url :price :timeplace :summary]
-          ((juxt id img title rel-url price timeplace summary) annonce)))
+  (zipmap [:id :img :title :link :price :timeplace :summary]
+          ((juxt id img title link price timeplace summary) annonce)))
 
 (defn current-annonces [page]
   (map #(parse-annonce %)
