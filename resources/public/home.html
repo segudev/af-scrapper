@@ -35,6 +35,13 @@
         xhttp.send();
       });
     }
+    function scroll(){
+      if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+        console.log("fetching page" + (count + 1));
+        populate(++count);
+        sleep(500);
+      }
+    };
     function append(element) {
       document.body.insertAdjacentHTML(
         "beforeend",
@@ -64,13 +71,8 @@
 
     populate(count); // init document
 
-    window.onscroll = function () {
-      if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
-        console.log("fetching page" + (count + 1));
-        populate(++count);
-        sleep(500);
-      }
-    };
+    document.body.ontouchmove = scroll();
+    window.onscroll = scroll();
     window.onblur = function() {
       let start = Date.now();
       window.onfocus = function () {

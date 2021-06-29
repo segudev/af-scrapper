@@ -22,20 +22,32 @@ html, body {
   }
   
 .tint:before {
-content: "";
-display: block;
-position: absolute;
-top: 0;
-bottom: 0;
-left: 0;
-right: 0;
-/* background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 80%); */
-background: rgba(0, 0, 0, 0.75);
-transition: background .2s ease-in;
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.35);;
 }
 
-.tint:hover:before {
-background: rgba(0, 0, 0, 0.35);;
+@media(hover: hover) and (pointer: fine) {
+    .tint:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.75);
+    transition: background .2s ease-in;
+    }
+
+    .tint:hover:before {
+    background: rgba(0, 0, 0, 0.35);;
+    }
 }
 
 .text {
