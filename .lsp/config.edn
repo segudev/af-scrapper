@@ -1,0 +1,3 @@
+{:linters {:clj-kondo {:level :off}
+           :unused-public-var {:level :off}}}
+ 
