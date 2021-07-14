@@ -1,21 +1,21 @@
 (ns af-back.parsing
   (:require [hickory.core :refer :all]
             [hickory.select :as s]
-            [clj-http.client :as client]
-            [clojure.string :as string])
-  (:gen-class))
+            [org.httpkit.client :as http]
+            [clojure.string :as string]))
 
 (def DOMAIN "https://fr.audiofanzine.com")
 (def ENDPOINT "/synthetiseur/petites-annonces")
 
 (defn url [page]
   (str DOMAIN ENDPOINT (format "/p.%d.html" page)))
-
-(defn af-selling [page]
-  (-> (client/get (url page) {:insecure? true})
-      :body
-      parse
-      as-hickory))
+                  
+(defn af-page [page]
+  (http/get (url page)
+  (fn [{:keys [opts body error] :as resp}]
+    (if error
+      (println "Error on" opts)
+      (as-hickory (parse body))))))
 
 (defn extract-annonces [page]
   (s/select (s/class "clearfix") page))
@@ -91,7 +91,7 @@
 
 (defn current-annonces [page]
   (map #(parse-annonce %)
-       (extract-annonces (af-selling page))))
+       (extract-annonces @(af-page page))))
 
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;
