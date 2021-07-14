@@ -12,6 +12,6 @@
                  [org.clojure/data.json "0.2.6"]
                  [http-kit "2.3.0"]
                  [jumblerg/ring-cors "2.0.0"]]
-  :main ^:skip-aot af-back.core
+  :main af-back.core
   :uberjar-name "af-back-standalone.jar"
   :profiles {:uberjar {:aot :all}})
